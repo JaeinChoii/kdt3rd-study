@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 참조방식</title>
+        <!-- CSS 참조방식1) 외부 스타일 시트 -->
+        <link rel="stylesheet" href="./index.css">
+
+        <!-- CSS 참조방식2) 내부 스타일 시트 -->
+        <style>
+            ul {
+                background-color: skyblue;
+            }
+        </style>
+
+</head>
+<body>
+    <!-- CSS 참조방식3) HTML 태그 내에 스타일 지정 -->
+    <h1 style="color:red;">CSS 사용법을 익혀보자!</h1>
+    
+    <ul>
+        <li>원</li>
+        <li>투</li>
+        <li>쓰리</li>
+
+    </ul>
+
+    <!-- 
+        1.외부 스타일 시트 방식 (CSS의 장점을 모두 갖춤)
+            -html 구조만, CSS는 디자인만
+            -자주 사용되는 디자인은 여러 파일에 링크 걸기 가능
+            -효율성 좋음
+        
+        2. 내부 스타일 시트 방식
+            -해당 html만 적용 가능
+            -동일한 스타일 다른 html에 재작성 필요
+            -유지 보수성이 낮음
+        3. html 태그 내에 스타일 지정 방식
+            -직관적, 수정이 빠르고 간편
+            -권장하지 않음 html은 구조를 담당, css는 디자인만 담당 ->원칙위배
+     -->
+</body>
+</body>
+</html>

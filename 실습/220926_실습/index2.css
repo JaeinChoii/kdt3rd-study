@@ -1,0 +1,18 @@
+.se {
+    animation-name: se1;
+    position: relative;
+    animation-duration: 3s;
+}
+
+@keyframes se1 {
+    from {
+        left: 1000px;
+        width: 200%;
+
+    }
+
+    to {
+        left: 0;
+        width: 100%;
+    }
+}

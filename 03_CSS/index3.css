@@ -1,0 +1,110 @@
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+    font-family: 'Jua', sans-serif;
+}
+
+    div {
+    color:royalblue;
+    background: linear-gradient(45deg, yellow, pink);
+
+    /* 폰트 크기 */
+    font-size: 50px;
+
+    /* 굵기 */
+    font-weight:700;
+
+    /* [font-family] 글씨체 */
+    /* serif sans-serif monospace cursive */
+    /* 폰트 이름에 공백이 있는 경우 '로 감싸줌 */
+    /* font-family: 'Courier New', Courier, monospace;  */
+    /* 여러개 설정 시 선언된 순서로 적용 */
+    /* 영어, 한글 글꼴을 다르게 설정하려면 한글 없는 폰트 먼저 선언 후 한글 폰트 선언 */
+
+    /* font-family: Georgia, "Malgen Gothic" */
+
+    /* [웹 폰트] 모든 사용자가 동일한 폰트로 화면을 볼 수 있음 */
+
+    /* [font-style] 글자 모양
+    italic과 oblique
+    italic: 필기체 느낌, oblique는 보통 모양의 기울임 */
+
+    font-style: italic;
+
+    /* 크기 */
+    width: 600px; 
+    /*height: 600px;*/
+
+    /* border: 테두리 */
+    /* border style 먼저 선언해야 모두 적용됨 */
+    /* solid dotted dashed inset */
+
+    /* border-style: solid;
+    border-width: 10px;
+    border-color: limegreen; */
+
+    /* border 단축 프로퍼티 */
+    /* border: width, style, color 한번에 설정 */
+    
+    /*border: 10px solid limegreen;*/
+    /* border-radius: 5px 30px; */
+    /*border-radius: 5px 30px 5px 30px 과 동일 */
+
+    border-right: 10px solid black;
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+    border-top: 10px solid black;
+
+
+    /* 박스 모델 */
+    /* 요소의 너비와 높이를 계산하는 방식 지정 body 태그에 적용 */
+    /* content -> padding -> border -> margin */
+    box-sizing: border-box;
+
+    /* margin, padding */
+    /* padding: content와 border 사이의 공간 */
+    /* margin: border 바깥 공간 */
+    
+    padding: 20px 50 px;
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px; */
+
+    margin: 50px 30px;
+    /* margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px; */
+    
+    /* padding: 20px; */
+    /* margin: 50px; */
+
+
+    }
+
+    p{
+        font-size: 50px;
+        font-weight: 700;
+
+        width: 400px;
+        border: 1px solid black;
+
+        /* 그림자 */
+        /* box-shadow: xoffset, yoffset, blur, color */
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 40%);
+
+        /* text-shadow */
+        text-shadow: pink 7px 1px 2px;
+
+    
+    }
+
+    span{
+        font-size: 20px;
+
+    }

@@ -1,0 +1,91 @@
+<html lang="ko">
+    <head>
+        <title>HTML 태그</title>
+    </head>
+    <body>
+        여기는 html 문서 내용을 채우는 곳입니다.
+
+        <!-- 주석: 개발자를 위한 설명글  CTRL + / 누르면 주석 생성 가능 -->
+        <!-- h1 ~ h6 제목 태그. h1이 제일 큰 제목 h6이 제일 작은 제목. 블록요소로 너비 100% 차지-->
+        <h1>제목입니다.</h1>
+        <h2>제목입니다.</h2>
+        <h3>제목입니다.</h3>
+        <h4>제목입니다.</h4>
+        <h5>제목입니다.</h5>
+        <h6>제목입니다.</h6>
+        <!-- p: 하나의 문단을 표시하고 싶을 때 사용. 블록요소로 너비 100% 차지-->
+        <p>여기는 첫번째 문단입니다.</p>
+        <p>여기는 두번째 문단입니다.</p>
+        <!-- img: image 이미지를 표시. 이미지는 인라인 요소-->
+        <!-- src: 이미지 경로 -->
+        <!-- width: 이미지 크기. 선택사항 -->
+        <img src="https://blog.kakaocdn.net/dn/bxqt8x/btrqXxxCzou/nRgttzYYI7pm62jizuGXe1/img.jpg" width=200 height="200">
+        <img src="./image/puppy.jpg">
+        <!-- 상대경로 -->
+        <img src="C:\Users\Jane\OneDrive\Documents\KDT 스터디3기\02_HTML\image/puppy.jpg" title="마우스를 올리면 설명을 볼 수 있어요.">
+        <img src="C:\Users\Jane\OneDrive\Documents\KDT 스터디3기\02_HTML\image/puppyi.jpg" alt="강아지">
+        <!-- 절대경로 -->
+
+        <!-- a -->
+        <!-- href 속성: 주소가 항상 필요! -->
+        <br>
+        <!-- br 태그는 빈 요소 -->
+        <a href="">a 태그입니다.</a>
+        <br>
+        <a href="https://www.naver.com/">NAVER</a>
+        <a href="https://www.google.co.kr/">GOOGLE</a>
+        <a href="https://www.daum.net/" target="_blank">DAUM</a>
+        <!-- a 태그 인라인 요소 -->
+        <!-- 파란색 글씨와 보라색 글씨의 차이는 접속 유무 -->
+        <!-- target="_blank" 하이퍼링크가 새 창으로 열림 -->
+        <hr>
+
+        <!-- div: division 가상의 레이아웃 블록 요소로 너비 100% 차지-->
+        <div>div1</div>
+        <div>div2</div>
+        <div>
+            <div>div안에 dvi1</div>
+            <div>div안에 dvi2</div>
+        </div>
+
+        <!-- span: 인라인 요소(컨텐츠만큼 공간 차지) span 사이의 기본 여백은 4pixel-->
+        <span>span1</span>
+        <span>span2</span>
+        <p>안녕하세요, 저는 <span>최재인</span>입니다.</p>
+
+        <!-- ul, ol, li 태그 -->
+        <!-- ul: unordered list (순서가 없는 목록) -->
+        <!-- ol: ordered list (순서가 있는 목록) -->
+        <!-- li: list -->
+        <ul>
+            <li>사과</li>
+            <li>오렌지</li>
+            <li>키위</li>
+            <li>딸기</li>
+        </ul>
+
+        <ol type="a" start="5" reversed>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+        </ol>
+        <!-- ol type 속성 a, A, i, I -->
+        <!-- reversed는 값을 입력하지 않아도 됨 -->
+
+        <!-- ul, ol 중첩사용 -->
+        <hr>
+        <ul>
+            <li>요소1</li>
+            <li>요소2</li>
+            <ol>
+                <li>요소2의 자식요소1</li>
+                <li>요소2의 자식요소2</li>
+                <li>요소2의 자식요소3</li>
+            </ol>
+            
+            <li>요소3</li>
+            <li>요소4</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+div {
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: transparent;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+/* z-index
+    -레이어 효과: 겹겹이 쌓이게 만드는 속성
+    -숫자 지정 -> 숫자가 클수록 위로 배치 (z축 기준)
+    -양수, 음수 모두 가능
+    -auto 기본값
+*/
+.div1 {
+    top: 100px;
+    left: 100px;
+    background-color: red;
+    /* z-index:  */
+}
+.div2 {
+    top: 160px;
+    left: 140px;
+    background-color: orange;
+    /* z-index:  */
+}
+.div3 {
+    top: 200px;
+    left: 200px;
+    background-color: yellow;
+    /* z-index:  */
+}
+
+    .div4 {
+    top: 240px;
+    left: 240px;
+    background-color: green;
+    /* z-index: */
+}
+.div5 {
+    top: 280px;
+    left: 300px;
+    background-color: blue;
+    z-index: 1
+}
+
+.div1 > .eye1 {
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+
+.div1 > .eye2 {
+    top: 40px;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+}
+
+img {
+    position: absolute;
+    top: 300px;
+}

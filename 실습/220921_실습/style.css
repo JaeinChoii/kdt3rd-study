@@ -1,0 +1,185 @@
+/* COMMON */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+  color: rgb(78, 78, 78);
+  
+}
+body {
+  background-color: #F2E4C9;
+}
+ul,
+ol {
+  list-style: none;
+  
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+a:visited {
+  color: #555;
+}
+
+/* SECTION.WRAP */
+.wrap {
+  /* 다음 시간에 배우게 될 속성입니다 :) 카드를 body 태그의 정가운데 배치하는 코드예요. */
+  text-align: center;
+  font-size:15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-style:solid;
+  background: #F2F2F2;
+  border-radius:10px;
+  border-color:#F2F2F2;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 500px;
+  padding: 40px;
+
+}
+
+img {border-style: solid;
+  border-radius: 50%;
+  border-width:0;
+  box-shadow: 10px 10px 10px rgb(240, 210, 156);(0, 0, 0, 0.1)}
+
+  body.member_2 > .wrap .profile .image {
+  border-style: solid;
+  border-radius: 50%;
+  border-width:0;
+  box-shadow: 10px 10px 10px rgb(127, 143, 189);(0, 0, 0, 0.1)}
+  
+  body.member_3 > .wrap .profile .image {
+    border-style: solid;
+    border-radius: 50%;
+    border-width:0;
+    box-shadow: 10px 10px 10px rgb(202, 156, 192);(0, 0, 0, 0.1)}
+  
+
+p {
+  font-size: 10px;
+  color:gray;
+}
+
+/* ARTICLE.PROFILE */
+.wrap .profile .btnView {
+    border-style: solid;
+    border-radius: 30px;
+    border-color: orange;
+    background-color: orange;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+
+  /* 다음 시간에 배우게 될 속성입니다 :) .btnView 요소(a태그)를 block 요소로 만들어줘요 */
+  /* 블록 요소가 되었으므로 width, height 속성 사용이 가능해요. width, height 를 이용해 버튼 크기를 지정해주세요! */
+  display: block;
+  width: 150px;
+  height: 20px;
+}
+body.member_2 > .wrap .profile .btnView {
+  border-style: solid;
+  border-radius: 30px;
+  border-color: skyblue;
+  background-color: skyblue;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+body.member_3 > .wrap .profile .btnView {
+  border-style: solid;
+  border-radius: 30px;
+  border-color: pink;
+  background-color: pink;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+
+/* UL.CONTACT */
+
+ li.line {
+  border-style: solid;
+  display: bottom;
+  border-right: 0px solid black;
+  border-left: 0px solid black;
+  border-bottom: 1px solid gray;
+  border-top: 0px solid black;
+ }
+
+
+.wrap .others a {
+  /* 다음 시간에 배우게 될 속성입니다 :) .others 요소 하위에 있는 a 태그들(3개)을 inline-block 요소로 만들어줘요 */
+  /* 인라인-블록 요소도 블록요소와 마찬가지로 width, height 속성 사용이 가능해요. width, height 를 이용해 버튼 크기를 지정해주세요! */
+  display: inline-block;
+  border-style: solid;
+  border-radius: 30px;
+  border-width: 10px;
+  border-color: gray;
+  box-shadow: 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  
+}
+
+/* 다음 시간에 배우게 될 선택자입니다 :) nth-of-type() 은 가상선택자로, 몇 번째 요소인지 판단하는 요소예요. */
+/* a.on:nth-of-type(n) 은 a태그이자 .on 클래스를 갖는 n번째 요소를 선택해줍니다. */
+.wrap .others a.on:nth-of-type(1) {
+  /* 이 곳에 필요한  style을 선언해주세요. */
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 10px;
+    border-color: orange;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.wrap .others a.on:nth-of-type(2) {
+    /* 이 곳에 필요한  style을 선언해주세요. */
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 10px;
+    border-color: blue;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.wrap .others a.on:nth-of-type(3) {
+  /* 이 곳에 필요한  style을 선언해주세요. */
+  border-style: solid;
+  border-radius: 30px;
+  border-width: 10px;
+  border-color: #F280BF;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+/* HINT: index.html 먼저 완성한 후, member_2.html, member_3.html에서 변경되는 css 속성(ex. 배경색 등)을 아래에 추가해주세요! */
+/* MEMBER_2 CUSTOM */
+body.member_2 {
+  background-color: #D8F2F0;
+
+}
+/* MEMBER_3 CUSTOM */
+body.member_3 {
+  background-color: pink;
+}

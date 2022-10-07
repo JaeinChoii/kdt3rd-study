@@ -1,0 +1,76 @@
+div {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    line-height: 100px;
+}
+
+div.bug1 {
+    left: 30px;
+    background-color: blue;
+    border-color: blue;
+}
+
+div.bug2 {
+    bottom: 80px;
+    left: 40px;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 50%;
+    background-color: white;
+    border-color: white;
+    z-index: 6;
+
+}
+
+div.bug3 {
+    bottom: 110px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-color: black;
+    z-index: 7;
+}
+
+div.bug4 {
+    bottom: 90px;
+    left: 60px;
+    background-color: rgb(23, 78, 122);
+    border-color: rgb(23, 78, 122);
+}
+
+
+div.bug5 {
+    bottom: 120px;
+    left: 100px;
+    background-color: navy;
+    border-color: navy;
+
+}
+
+div.bug6 {
+    bottom: 140px;
+    left: 100px;
+    background-color: lavender;
+    border-color: lavender;
+
+}
+
+div.bug7 {
+    bottom: 160px;
+    left: 140px;
+    background-color: rgb(15, 175, 196);
+    border-color: rgb(15, 175, 196);
+    z-index: 1
+}
+
+img {
+    position: relative;
+    bottom: 250px;
+    
+}
