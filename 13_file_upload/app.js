@@ -41,6 +41,7 @@ app.get('/', function (req, res) {
 // 1. single(): 하나의 파일 업로드할 때
 // single()의 인자: input 태그의 name 값
 // single() -> req.file 객체에 파일 정보
+
 // app.post('/upload', upload.single('userfile'), function (req, res) {
 app.post('/upload', uploadDetail.single('userfile'), function (req, res) {
 
@@ -59,12 +60,28 @@ app.post('/upload', uploadDetail.single('userfile'), function (req, res) {
     console.log(req.file);
     // req.body: title 데이터 정보 확인 가능
     // [Object: null prototype] { title: '1' }
-
     console.log(req.body);
-  
     res.send('Uploads!');
-  });
+    });
 
-app.listen(PORT, function (req, res) {
-  console.log(`http://localhost:${PORT}`);
-});
+    // 2. array(): 여러 파일을 하나의 input에 업로드할 때
+    // array() -> req.files 객체에 파일 정보
+    app.post('/upload/array', uploadDetail.array('userfiles'),
+        function (req, res) {
+            console.log(req.files);
+            console.log(req.body);
+            res.send('Uploaded Mutiple!!')
+        });
+
+
+    // 3. fields(): 여러 파일을 각각의 input에 업로드 할 때
+app.post('/upload/fields', uploadDetail.fields([{ name: 'userfile1' }, { name: 'userfile2' }]),
+    function (req, res) {
+        console.log(req.files);        // { userfile1: [ {} ], userfile2: [ {} ]}
+        console.log(req.body);         // { title1: '강아지5', title2: '강아지6' }
+        res.send('Upload Mutiple Each!');
+    });
+
+    app.listen(PORT, function (req, res) {
+        console.log(`http://localhost:${PORT}`);
+    });
