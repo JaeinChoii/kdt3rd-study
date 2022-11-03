@@ -26,13 +26,15 @@ const uploadDetail = multer({
             // 현재시간: 파일명이 겹치는 것을 막기 위함
         },
     }),
-    limits: { fileSize: 5 * 1024 * 1024 },
+    // limits: { fileSize: 5 * 1024 * 1024 },
 });
 
 app.set('view engine', 'ejs');
 app.use('/views', express.static(__dirname + '/views'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use('/uploads', express.static(__dirname + '/uploads'));
+
 
 app.get('/', function (req, res) {
   res.render('index', { title: '파일 업로드를 배워보자!' });
@@ -81,6 +83,15 @@ app.post('/upload/fields', uploadDetail.fields([{ name: 'userfile1' }, { name: '
         console.log(req.body);         // { title1: '강아지5', title2: '강아지6' }
         res.send('Upload Mutiple Each!');
     });
+
+    // 4. 동적 파일 업로드
+app.post('/dynamicFile',
+    uploadDetail.single('dynamicFile'),
+    function (req, res) {
+        console.log(req.file);
+        res.send(req.file);
+    });
+
 
     app.listen(PORT, function (req, res) {
         console.log(`http://localhost:${PORT}`);
