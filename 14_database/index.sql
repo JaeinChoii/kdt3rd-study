@@ -313,3 +313,26 @@ FROM customer
 WHERE orderlist.id = 3;
     
 
+CREATE TABLE customers (
+    id VARCHAR(10) NOT NULL PRIMARY KEY,
+    name VARCHAR(20) NOT NULL, 
+    age INT(2) NOT NULL,
+    gender ENUM( 'F', 'M', '') DEFAULT '',
+    cellphone INT(10) NOT NULL
+);
+
+INSERT INTO customers (id, name, age, gender, cellphone) VALUES ('iecunningham', 'Ian', 28, 'M', '010-7243-4821');
+
+ALTER TABLE customers MODIFY id VARCHAR(20);
+ALTER TABLE customers MODIFY cellphone INT;
+ALTER TABLE customers MODIFY cellphone VARCHAR(20);
+
+
+INSERT INTO customers (id, name, age, gender, cellphone) VALUES ('왕코딱지이안', '이안', 28, 'M', '010-7243-4822');
+
+DELETE FROM customers WHERE id = '왕코딱지이안';
+DELETE FROM customers WHERE id = '??????';
+
+INSERT INTO customers (id, name, age, gender, cellphone) VALUES ('쪼꼬미꼬추', '이안', 28, 'M', '010-7243-4823');
+INSERT INTO customers (id, name, age, gender, cellphone) VALUES ('왕짜증', '이안', 28, 'M', '010-7243-4823');
+INSERT INTO customers (id, name, age, gender, cellphone) VALUES ('못생겨써', '이안', 28, 'M', '010-7243-4823');
