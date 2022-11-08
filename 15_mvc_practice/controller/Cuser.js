@@ -7,8 +7,12 @@ exports.main = (req, res) => {
 };
 
 exports.practice30 = (req, res) => {
-    console.log(req.body);
-    if (realId === req.body.userId && realPw === req.body.userPw) {
+    console.log('******', req.body);
+
+    // DB에서 받아온 id, pw vs. 사용자가 폼에 입력한 id, pw
+    if (User.getUserInfo().realId === req.body.userId &&
+        User.getUserInfo().realPw === req.body.userPw
+    )  {
         res.send({ userInfo: req.body, isSuccess: true });
     } else {
         res.send({ isSuccess: false });

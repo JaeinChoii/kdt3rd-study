@@ -30,7 +30,7 @@
     <h1><%= title %></h1>
 
     <hr />
-    <h2>실습30. axios post 로그인</h2>
+    <h2>실습37. 실습30 ➡️ MVC 구조</h2>
     <p>
       (참고) app.js에 저장한 아이디는 banana이고, 비밀번호는 4321입니다.
       아이디와 비밀번호가 일치할 때와 불일치할 때 어떻게 다른지 확인해보세요!!
@@ -103,7 +103,8 @@
           console.log(response.data);
 
           if (response.data.isSuccess) {
-            loginResult.textContent = `${response.data.userInfo.userId}님! 로그인 성공😁`;
+            loginResult.textContent = `${response.data.userInfo.userId}님! 로그인 성공😁`; // 실습 30
+            // loginResult.textContent = `${response.data.userInfo.name}님! 로그인 성공😁`; // 추가 실습
             loginResult.classList.remove('error');
             loginResult.classList.add('success');
           } else {
