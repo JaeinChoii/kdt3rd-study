@@ -28,7 +28,9 @@ DESC visitor;
 
 -- DML
 -- 테이블 전체 데이터 조회 (READ)
-SELECT * FROM visitor;
+SELECT * FROM visitor; -- all
+SELECT * FROM visitor WHERE id=1; -- one
+
 
 -- 테이블 데이터 추가 (CREATE)
 -- id는 AUTO_INCREMENT(자동증가)이므로 입력하지 않아도 됨!
@@ -37,6 +39,13 @@ INSERT INTO visitor (name, comment) VALUES ('행복', '사랑합니다');
 INSERT INTO visitor (name, comment) VALUES ('최재인', '안냐떼용ㅋ');
 INSERT INTO visitor (name, comment) VALUES ('이안', 'ㅎㅎhi');
 INSERT INTO visitor (name, comment) VALUES ('JustinBieber', 'Drew');
+
+
+-- 테이블 데이터 삭제 (delete)
+DELETE FROM visitor WHERE id > 2;
+
+-- 테이블 데이터 수정 (update)
+UPDATE visitor SET name='누구', comment= '아무말' WHERE id=1;
 
 -- DCL
 -- mysql 사용자 추가(권한 부여) user 계정
@@ -48,4 +57,5 @@ FLUSH PRIVILEGES;
 -- 비밀번호 변경하고 싶다면?
 ALTER USER 'user'@'%' IDENTIFIED WITH mysql_native_password BY '비밀번호';
 
-ALTER 
+ALTER TABLE visitor MODIFY name VARCHAR(10);
+

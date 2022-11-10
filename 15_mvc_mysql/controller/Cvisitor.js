@@ -16,6 +16,17 @@ exports.getVisitors = (req, res) => {
   });
 };
 
+exports.getVisitor = (req, res) => {
+  console.log(req.query); // { id: 1 }
+  console.log(req.query.id); // '1'
+
+  Visitor.getVisitor(req.query.id, (result) => {
+    console.log('Cvisitor.js', result);
+    res.send(result);
+  });
+};
+
+
 exports.postVisitor = (req, res) => {
   console.log('postvisitor: ', req.body);
 
@@ -27,6 +38,16 @@ exports.postVisitor = (req, res) => {
       comment: req.body.comment, // 폼에 입력한 comment
     });
   });
+};
+
+exports.patchVisitor = (req, res) => {
+  console.log(req.body); 
+
+  Visitor.patchVisitor(req.body, (result) => {
+    console.log('Cvisitor.js', result);
+    res.send('수정 성공!!!');
+  })
+
 };
 
 exports.deleteVisitor = (req, res) => {

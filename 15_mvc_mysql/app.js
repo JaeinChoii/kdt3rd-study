@@ -4,6 +4,8 @@ const PORT = 8000;
 
 app.set('view engine', 'ejs');
 app.use('/views', express.static(__dirname + '/views'));
+// 정적 파일 보관할 폴더 설정
+// css, js, img
 app.use('/static', express.static(__dirname + '/static'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
