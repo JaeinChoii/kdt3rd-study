@@ -42,7 +42,7 @@ INSERT INTO visitor (name, comment) VALUES ('JustinBieber', 'Drew');
 
 
 -- 테이블 데이터 삭제 (delete)
-DELETE FROM visitor WHERE id > 2;
+DELETE FROM user WHERE id = 5;
 
 -- 테이블 데이터 수정 (update)
 UPDATE visitor SET name='누구', comment= '아무말' WHERE id=1;
