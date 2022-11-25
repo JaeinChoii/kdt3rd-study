@@ -1,7 +1,6 @@
 {
   "name": "15_mvc_mysql2",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +15,7 @@
     "mysql2": "^2.3.3",
     "sequelize": "^6.25.5",
     "sequelize-cli": "^6.5.2"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
