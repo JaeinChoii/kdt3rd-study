@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+
+}
+
+.all {
+  background-color: #f5f5dc;
+  width: 500px;
+  height: 600px;
+
+}
+
+.best {
+  text-align: center;
+  color: #fe8050;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+img {
+  align-items: center;
+  margin: 10px 30%;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.content {
+  margin: 20px 30px;
+  font-size: 20px;
+  font-weight: 800;
+}
