@@ -1,0 +1,31 @@
+// scss 파일명 맨 앞에 _를 붙이면 css로 컴파일 하지 않음
+// 성능 및 관리상의 이득
+// export 필요 x
+
+// 컬러 변수
+$color-red: red;
+$color-orange: orange;
+$color-yellow: yellow;
+$color-green: green;
+$color-blue: blue;
+$color-indigo: indigo;
+$color-purple: purple;
+$color-black: black;
+$color-white: white;
+
+// 사이즈 변수
+$box-size: 100px;
+
+// 애니메이션 시간
+$animation-duration: 0.4s;
+
+// 브레이크포인트
+$breakpoint-md: 768px;
+
+@mixin box($w, $h) {
+    width: $w;
+    height: $h;
+    border: 2px solid $color-black;
+}
+
+// @mixin: 정의하는 부분
